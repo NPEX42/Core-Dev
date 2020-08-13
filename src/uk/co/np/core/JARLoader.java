@@ -1,6 +1,5 @@
 package uk.co.np.core;
 
-import java.lang.reflect.Constructor;
 import java.net.URL;
 import java.net.URLClassLoader;
 
@@ -20,14 +19,5 @@ class JARLoader extends URLClassLoader {
 	}
 	public void addURL(URL url) {
 		super.addURL(url);
-	}
-	
-	private Constructor<?> LoadConstructor(Class<?> clazz, Class<?>... argTypes) {
-		try {
-			return clazz.getDeclaredConstructor(argTypes);
-		} catch (NoSuchMethodException | SecurityException e) {
-			System.err.println(e);
-			return null;
-		}
 	}
 }

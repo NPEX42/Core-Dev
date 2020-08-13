@@ -10,6 +10,7 @@ class NET {
 	public static boolean SendString(String msg, String ip, int port) {
 		if(ip == null) ip = "127.0.0.1";
 		try {
+			@SuppressWarnings("resource")
 			Socket sock = new Socket(ip, port);
 			BufferedWriter writer = new BufferedWriter(
 					new OutputStreamWriter(sock.getOutputStream())

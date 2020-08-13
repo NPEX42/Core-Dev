@@ -1,6 +1,5 @@
 package uk.co.np;
 
-import org.lwjgl.glfw.GLFW;
 
 
 public class Main {

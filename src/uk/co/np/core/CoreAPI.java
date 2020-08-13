@@ -3,7 +3,6 @@ package uk.co.np.core;
 import java.io.File;
 
 import com.sun.jna.Library;
-import com.sun.jna.platform.linux.LibC;
 
 public class CoreAPI {
 	private static JARLoader loader = new JARLoader();
